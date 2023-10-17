@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scales=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>First meal of the day</title>
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    </head>
+
+    <body>
+        <!--Header-->
+        <header>
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo">
+                <a href="#" class="logo">Food<span>Lover</span></a>
+            </div>
+            
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#review">Review</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="h-icons">
+                <a href="#"><i class='bx bx-search' ></i></a>
+                <a href="#"><i class='bx bx-user'></i></a>
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
+        </header>
+        
+        <!--Home-->
+        <section class="home" id="home">
+            <div class="home-text">
+                <h1><span>Welcome</span> to the World of Tasty & Fresh Meal</h1>
+                <p>Whether you are looking for a quick and easy breakfast<br/> we have something for you.</p>
+                <div class="but" id ="but" onclick="showForm()">Book a Table</div>
+            </div>
+
+            <div class="home-img">
+                <img src="img/home.png">
+            </div>
+
+            <div id="overlay"></div> <!--id để làm mờ trang-->
+            <div id="form">
+                <span id="close" onclick="hideForm()"><i class='bx bx-x'></i></span> <!--X button-->
+
+                <fieldset>
+                    <legend>Booking Form</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date">
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time">
+                    <label for="guests">Number of guests:</label>
+                    <input type="number" id="guests" name="guests" min="1" max="10"> 
+                </fieldset>
+                <br><br>
+                <input type="submit" id="submit" value="Submit"><!--Submit button-->
+            </div>
+        </section>
+
+        <!--Container-->
+        <section class="container">
+            <div class="main-text">
+                <h2>BreakFast</h2>
+                <p>8.00 am - 11.00 am</p>
+            </div>
+
+            <div class="container-box">
+                <div class="c-mainbx">
+                    <div class="container-img">
+                        <img src="img/br1.png" width="50px" height="40px">
+                    </div>
+                    <div class="container-text">
+                        <p>Tasty & Fresh Food</p>
+                    </div>
+                </div>
+
+                <div class="c-mainbx">
+                    <div class="container-img">
+                        <img src="img/br2.png" width="50px" height="40px">
+                    </div>
+                    <div class="container-text">
+                        <p>Tasty & Fresh Food</p>
+                    </div>
+                </div>
+
+                <div class="c-mainbx">
+                    <div class="container-img">
+                        <img src="img/br3.png" width="50px" height="40px">
+                    </div>
+                    <div class="container-text">
+                        <p>Tasty & Fresh Food</p>
+                    </div>
+                </div>
+
+                <div class="c-mainbx">
+                    <div class="container-img">
+                        <img src="img/br4.png" width="50px" height="40px">
+                    </div>
+                    <div class="container-text">
+                        <p>Tasty & Fresh Food</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr color="orange">
+        <!--About-->
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="img/about.png">
+            </div>
+            
+            <div class="about-text">
+                <h2>The Healthy Food<br>For Wealthy Mood</h2>
+                <p>Whether you are looking for a quick bite, a healthy meal, or a lavish spread, <span>FoodLover</span> has you covered.
+                    <br><br>You can also book a table online or order delivery with just a few clicks.
+                    <br><br>We offer fast and reliable service, as well as discounts and loyalty rewards for our regular customers.
+                    <br><br><span>FoodLover</span> is your ultimate guide to start your day right.
+                </p>
+                <div><a href="infor.html" class="but1">Further</a></div>
+            </div>
+        </section>
+
+        <hr color="orange">
+        <!--Menu-->
+        <section class="menu" id="menu">
+            <div class="main-text">
+                <h2>Top-Selling Dishes</h2>
+                <p>Are you feeling hungry?</p>
+            </div>
+
+            <div class="menu-content">
+                <div class="row">
+                    <img src="img/menu1.jpg">
+                    <div class="menu-text">
+                        <div class="menu-left">
+                            <h4>Spicy Egg Sandwich</h4>
+                        </div>
+                        <div class="menu-right">
+                            <h5>$8</h5>
+                        </div>
+                    </div>
+                    <p>This sausage and egg sandwich is a little sweet and briny from the Peppadew peppers!</p>
+                    <div class="star">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img src="img/menu2.jpg">
+                    <div class="menu-text">
+                        <div class="menu-left">
+                            <h4>Coconut-Cardamom French Toast</h4>
+                        </div>
+                        <div class="menu-right">
+                            <h5>$7</h5>
+                        </div>
+                    </div>
+                    <p>The custard and compote are perfumed with cardamom for a multidimensional take on the brunch favorite!</p>
+                    <div class="star">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img src="img/menu3.jpg">
+                    <div class="menu-text">
+                        <div class="menu-left">
+                            <h4>Spicy Chicken Pizza</h4>
+                        </div>
+                        <div class="menu-right">
+                            <h5>$10</h5>
+                        </div>
+                    </div>
+                    <p>Fire up your taste buds with this fiery and flavorful pizza. This east meets west pizza is bursting with flavour!</p>
+                    <div class="star">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="more"><a href="menu.html" class="butt">More</a></div>
+        </section>
+
+        <hr color="orange">
+        <!--Review-->
+        <section class="review" id="review">
+            <h2>Customer's Review</h2>
+            
+            <div class="slider-container active">
+                <div class="slide">
+                    <i class='bx bxs-quote-right'></i>
+                    <div class="user">
+                        <img src="img/rev1.png">
+                        <div class="user-info">
+                            <h3>Amelia</h3>
+                            <div class="stars">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="rev-text">The food is always fantastic and no matter what I order I am always delighted with my meal!</p>
+                </div>
+            </div>
+
+            <div class="slider-container">
+                <div class="slide">
+                    <i class='bx bxs-quote-right'></i>
+                    <div class="user">
+                        <img src="img/rev2.png">
+                        <div class="user-info">
+                            <h3>Lionel</h3>
+                            <div class="stars">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="rev-text">We had a wonderful time at this restaurant. The food was fresh, tasty, and beautifully presented!</p>
+                </div>
+            </div>
+
+            <div class="slider-container">
+                <div class="slide">
+                    <i class='bx bxs-quote-right'></i>
+                    <div class="user">
+                        <img src="img/rev3.png">
+                        <div class="user-info">
+                            <h3>Emmie</h3>
+                            <div class="stars">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star-half'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="rev-text">The food was amazing, the service was friendly and attentive, and the atmosphere was cozy and inviting!</p>
+                </div>
+            </div>
+
+            <div class="slider-container">
+                <div class="slide">
+                    <i class='bx bxs-quote-right'></i>
+                    <div class="user">
+                        <img src="img/rev4.png">
+                        <div class="user-info">
+                            <h3>Norman</h3>
+                            <div class="stars">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star-half'></i>
+                                <i class='bx bx-star'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="rev-text">The portions were generous and the prices were reasonable. I will definitely come back again!</p>
+                </div>
+            </div>
+
+            <div class="slider-container">
+                <div class="slide">
+                    <i class='bx bxs-quote-right'></i>
+                    <div class="user">
+                        <img src="img/rev5.png">
+                        <div class="user-info">
+                            <h3>Sandra</h3>
+                            <div class="stars">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bx-star'></i>
+                                <i class='bx bx-star'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="rev-text">I ordered the seafood platter, the steak frites, and the chocolate cake, and we loved every bite!</p>
+                </div>
+            </div>
+
+            <div id="next" onclick="next()" ><i class='bx bxs-chevrons-right'></i></div>
+            <div id="prev" onclick="prev()"><i class='bx bxs-chevrons-left'></i></div>
+        </section> 
+
+        <hr color="orange">
+        <!--Contact-->
+        <section class="contact" id="contact">
+            <h2>We're always here for you...</h2>
+            <div class="contact-container">
+                <div class="contact-box">
+                    <div>
+                        <i class='bx bx-envelope'></i>
+                        <h3>Send email anytime</h3>
+                    </div>
+                    <div>
+                        <p>foodlover@lover.food</p>
+                        <i class='bx bxs-send'></i>
+                    </div>
+                </div>
+
+                <div class="contact-box">
+                    <div>
+                        <i class='bx bxs-map'></i>
+                        <h3>Find Us</h3>
+                    </div>
+                    <div>
+                        <p>Km 9, Nguyen Trai, Nam Tu Liem, Ha Noi</p>
+                        <i class='bx bx-search-alt'></i>
+                    </div>
+                </div>
+
+                <div class="contact-box">
+                    <div>
+                        <i class='bx bxs-phone'></i>
+                        <h3>Call us anytime</h3>
+                    </div>
+                    <div>
+                        <p>+12 345 6789</p>
+                        <i class='bx bxs-phone-call'></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-box">
+                    <h2>Send us a message</h2>
+                    <form>
+                        <div class="form-group"><input type="text" class="fname" placeholder="First Name"></div>   
+                        <div class="form-group"><input type="text" class="lname" placeholder="Last Name"></div>
+                        <div class="form-group"><input type="email" class="email" placeholder="Email"></div>
+                        <div class="form-group"><input type="number" class="phone" placeholder="Phone"></div>
+                        <div class="form-group"><textarea type="text" id="" placeholder="Write your message"></textarea></div>
+                        <input type="submit" value="Send a message" class="submit-button">
+                    </form>
+                </div>
+
+                <div class="footer-box">
+                    <h3>Opening hours</h3>
+                    <div>
+                        <li>Monday-Friday: AM 05:30-10:30</li>
+                        <li>Tuesday: AM 6:00-10:00</li>
+                        <li>Saturday: AM 06:00-11:00</li>
+                        <li><pre>Sunday: AM 06:00-12:00
+                PM 12:30-02:00</pre></li> 
+                    </div>
+                </div>
+
+                <div class="footer-box">
+                    <h3>Follow Us</h3>
+                    <div>
+                        <li><a href="https://www.facebook.com/minh.peas"><i class='bx bxl-facebook-circle'></i>Facebook</a></li>
+                        <li><a href="https://www.instagram.com/_minh.peas_"><i class='bx bxl-instagram-alt'></i>Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/@vminh.peas"><i class='bx bxl-tiktok'></i></i>TikTok</a></li>
+                        <li><a href="https://github.com/vminhh"><i class='bx bxl-github'></i>Github</a></li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="last-text">
+            <p>© 2023 FoodLover. All Rights Reserved by Minh!</p>
+            </div>
+        </footer>
+
+        <!--Scroll top-->
+        <a href="#home" class="scroll-top">
+            <i class='bx bxs-up-arrow-square'></i>
+        </a>
+
+        <!--JS-->
+        <script src="js/script.js"></script>
+
+    </body>
+</html>
