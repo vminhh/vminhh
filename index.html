@@ -40,32 +40,11 @@
             <div class="home-text">
                 <h1><span>Welcome</span> to the World of Tasty & Fresh Meal</h1>
                 <p>Whether you are looking for a quick and easy breakfast<br/> we have something for you.</p>
-                <div class="but" id ="but" onclick="showForm()">Book a Table</div>
+                <div><a href="signup.html" class="but1">Sign up</a></div>
             </div>
 
             <div class="home-img">
                 <img src="img/home.png">
-            </div>
-
-            <div id="overlay"></div> <!--id để làm mờ trang-->
-            <div id="form">
-                <span id="close" onclick="hideForm()"><i class='bx bx-x'></i></span> <!--X button-->
-
-                <fieldset>
-                    <legend>Booking Form</legend>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
-                    <label for="date">Date:</label>
-                    <input type="date" id="date" name="date">
-                    <label for="time">Time:</label>
-                    <input type="time" id="time" name="time">
-                    <label for="guests">Number of guests:</label>
-                    <input type="number" id="guests" name="guests" min="1" max="10"> 
-                </fieldset>
-                <br><br>
-                <input type="submit" id="submit" value="Submit"><!--Submit button-->
             </div>
         </section>
 
@@ -139,8 +118,29 @@
             <div class="main-text">
                 <h2>Top-Selling Dishes</h2>
                 <p>Are you feeling hungry?</p>
+                <div class="but" id ="but" onclick="showForm()">Book a Table</div>
             </div>
 
+            <div id="overlay"></div> <!--id để làm mờ trang-->
+            <div id="form">
+                <span id="close" onclick="hideForm()"><i class='bx bx-x'></i></span> <!--X button-->
+
+                <fieldset>
+                    <legend>Booking Form</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date">
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time">
+                    <label for="guests">Number of guests:</label>
+                    <input type="number" id="guests" name="guests" min="1" max="10"> 
+                </fieldset>
+                <br><br>
+                <input type="submit" id="submit" value="Submit"><!--Submit button-->
+            </div>
             <div class="menu-content">
                 <div class="row">
                     <img src="img/menu1.jpg">
