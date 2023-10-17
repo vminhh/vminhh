@@ -48,7 +48,7 @@ header{
 .logo img{
     width: 50px;
     float: left;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 .logo a {
     display: flex;
