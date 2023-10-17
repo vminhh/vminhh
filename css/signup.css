@@ -39,7 +39,8 @@ body{
 .sign-up{
     width: 400px;
     height: 650px;
-    margin: auto;
+    padding: 10px 20px;
+    margin: auto auto;
     background: var(--bg);
     border-radius: 5px;
 }
@@ -56,7 +57,7 @@ form label{
     margin-left: 15px;
 }
 form input{
-    width: 100%;
+    width: 320px;
     padding: 8px;
     margin: 0 0 20px 10px;
     border: 1px solid var(--main);
@@ -67,8 +68,8 @@ form input:hover{
     transform: scale(1.03);
 }
 .but{
-    width: 400px;
-    height: 40px;
+    width: 320px;
+    height: 35px;
     margin-top: 10px;
     font-size: 17px;
     color: black;

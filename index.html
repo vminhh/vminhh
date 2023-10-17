@@ -122,25 +122,25 @@
             </div>
 
             <div id="overlay"></div> <!--id để làm mờ trang-->
-            <div id="form">
+            <div id="form">      <!--Booking form-->
                 <span id="close" onclick="hideForm()"><i class='bx bx-x'></i></span> <!--X button-->
-
                 <fieldset>
                     <legend>Booking Form</legend>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
-                    <label for="date">Date:</label>
-                    <input type="date" id="date" name="date">
-                    <label for="time">Time:</label>
-                    <input type="time" id="time" name="time">
-                    <label for="guests">Number of guests:</label>
-                    <input type="number" id="guests" name="guests" min="1" max="10"> 
+                    <label>Name:</label>
+                    <input type="text">
+                    <label>Email:</label>
+                    <input type="email">
+                    <label>Date:</label>
+                    <input type="date">
+                    <label>Time:</label>
+                    <input type="time">
+                    <label>Number of guests:</label>
+                    <input type="number" placeholder="1 to 10"> 
                 </fieldset>
-                <br><br>
+                <br>
                 <input type="submit" id="submit" value="Submit"><!--Submit button-->
             </div>
+
             <div class="menu-content">
                 <div class="row">
                     <img src="img/menu1.jpg">
@@ -364,7 +364,7 @@
                         <div class="form-group"><input type="text" class="fname" placeholder="First Name"></div>   
                         <div class="form-group"><input type="text" class="lname" placeholder="Last Name"></div>
                         <div class="form-group"><input type="email" class="email" placeholder="Email"></div>
-                        <div class="form-group"><input type="number" class="phone" placeholder="Phone"></div>
+                        <div class="form-group"><input type="text" class="phone" placeholder="Phone"></div>
                         <div class="form-group"><textarea type="text" id="" placeholder="Write your message"></textarea></div>
                         <input type="submit" value="Send a message" class="submit-button">
                     </form>

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -45,9 +46,9 @@ header{
 
     /*ảnh logo và FoodLover*/
 .logo img{
-    width: 40px;
+    width: 50px;
     float: left;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 .logo a {
     display: flex;
@@ -109,16 +110,16 @@ span{
 
     /* home */
 section{
-    padding: 90px 15% 80px;
+    padding: 80px 10% 70px;
 }
 .home{
-    height: 63vh;
-    width: 100%;
+    height: 70vh;
+    width: 95%;
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 .home-img img{
     width: 85%;
@@ -145,15 +146,16 @@ header.sticky{
 }
 
     /* container */
-.main-text h2{
+.container .main-text h2{
     font-size: var(--h2-font);
-    margin-bottom: 10px;
+    margin: 0 30px;
 }
-.main-text p{
+.container .main-text p{
     font-size: var(--p-font);
     font-weight: 500;
     color: var(--sec-color);
     line-height: 32px;
+    margin: 0 40px;
 }
 
     /* thanh breakfast */
@@ -162,7 +164,7 @@ header.sticky{
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     gap: 1rem;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 .c-mainbx{
     display: flex;
@@ -193,7 +195,7 @@ header.sticky{
     gap: 2rem;
 }
 .about-img img{
-    width: 80%;
+    width: 90%;
     height: auto;
 }
 .about-text h2{
@@ -258,7 +260,7 @@ header.sticky{
     text-align: center;
 }
 .but1:hover{
-    transform: scale(1.03) rotate(-7deg);
+    transform: scale(1.2) rotate(-7deg);
     cursor: pointer;
     background: var(--check);
 }
@@ -294,12 +296,11 @@ header.sticky{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 35%;
-    height: auto;
-    margin: 10px;
-    padding: 10px;
+    width: 600px;
+    height: 500px;
+    margin: 10px auto;
+    padding: 10px 5px;
     background: var(--main);
-    backdrop-filter: blur(5px);
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     border-radius: 10px;
 }
@@ -311,14 +312,17 @@ header.sticky{
     cursor: pointer;
     color: black;
 }
+#close:hover{
+    color: var(--bg);
+}
 #submit{
     position: absolute;
     align-items: center;
-    width: 100px;
-    height: 40px;
+    width: 90px;
+    height: 45px;
     bottom: 5px;
     right: 5px;
-    font-size: var(--t-font);
+    font-size: 20px;
     cursor: pointer;
     border-radius: 5px;
 }
@@ -360,7 +364,7 @@ input:hover{
     background-color: rgba(225,225,225,0.5);
 }
     /*menu*/
-.main-text{
+.menu .main-text{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
@@ -691,7 +695,7 @@ input:hover{
     /* Responsive*/
 @media (max-width: 1690px){
     section{
-        padding: 70px 2%;
+        padding: 65px 3%;
         transition: 0.2s;
     }
     header{
@@ -709,20 +713,28 @@ input:hover{
 }
 @media (max-width: 1290px){
     section{
-        padding: 80px 2%;
+        padding: 80px 3%;
         transition: 0.2s;
     }
     :root{
         --big-font: 3.2rem;
         --h2-font: 2rem;
         --p-font: 1rem;
-        transition: 0.2s;
+        --t--font: 1.2rem;
+        transition: 0.25s;
     }
     .home{
-        height: 80vh;
+        height: 76vh;
     }
     .main-text{
         text-align: center;
+    }
+    #form{
+        width: 470px;
+    }
+    #submit{
+        width: 75px;
+        height: 40px;
     }
     #next, #prev{
         height: 40px;
@@ -760,7 +772,14 @@ input:hover{
     }
     .navbar.open{
         right: 0;
-    }       
+    } 
+    #form{
+        width: 380px;
+    }
+    #submit{
+        width: 65px;
+        height: 35px;
+    }      
     #next{
         right: 9%;
     }
@@ -772,12 +791,12 @@ input:hover{
     :root{
         --big-font: 3rem;
         --h2-font: 1.8rem;
-        --t-font: 1.2rem;
+        --t-font: 1rem;
         transition: 0.2s;
     }
     .home{
         grid-template-columns: 1fr;
-        height: 144vh;
+        height: 125vh;
     }
     .home-img{
         text-align: center;
@@ -792,6 +811,15 @@ input:hover{
     }
     .about{
         grid-template-columns: 1fr;
+    }
+    #form{
+        width: 275px;
+        height: auto;
+    }
+    #submit{
+        width: 35px;
+        height: 20px;
+        font-size: 8px;
     }
     #next{
         right: 5%;
