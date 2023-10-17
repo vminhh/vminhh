@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -255,13 +254,14 @@ header.sticky{
     color: var(--bg);
     font-size: 20px;
     font-weight: 600;
-    border-radius: 5rem;
+    border-radius: 1.5rem;
     transition: all 0.39s ease;
     text-align: center;
+    cursor: pointer;
 }
 .but1:hover{
-    transform: scale(1.2) rotate(-7deg);
-    cursor: pointer;
+    transform: scale(1.2) rotate(-3deg);
+    color: var(--bg);
     background: var(--check);
 }
 
@@ -283,8 +283,7 @@ header.sticky{
     letter-spacing: 0.08rem;
     background: var(--check);
     transform: scale(1.1) rotate(7deg);
-}  /* hết nút Book */
-
+} 
     /* Booking Form */
 #form{
     display: none;
@@ -440,6 +439,7 @@ input:hover{
     cursor: pointer;
     background: var(--check);
 }
+
     /* trang con của menu */
 .last-text-menu {
     position: relative;
@@ -656,8 +656,9 @@ input:hover{
     height: 60px;
     margin: 0px 12px;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     background: var(--main);
+    color: var(--bg);
     cursor: pointer;
     text-align: center;
     border: 0.1rem solid var(--main);
@@ -666,6 +667,11 @@ input:hover{
 .submit-button:hover{
     background: var(--check);
     color: var(--bg);
+}
+/* hiệu ứng bấm */
+.but:active , .but1:active , .butt:active, #next:active, #prev:active, .submit-button:active, .footer-box div a:active{
+    background: red;
+    transition: all 0.05s;
 }
 
     /* Copyright */
