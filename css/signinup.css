@@ -14,7 +14,7 @@
     --text: #302e29;
     --main: #ff9100;
     --sec-color: #858585;
-    --bg: #fff;
+    --bg: white;
     --check: gray;
     --h2-font: 2.6rem;
 }
@@ -41,8 +41,8 @@ span{
 
 .sign-up{
     width: 400px;
-    height: 650px;
-    padding: 10px 20px;
+    height: 570px;
+    padding: 5px 20px;
     margin: auto auto;
     background: var(--bg);
     border-radius: 5px;

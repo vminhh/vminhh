@@ -16,7 +16,7 @@
         <!--Header-->
         <header>
             <div class="logo">
-                <img src="img/logo.png" alt="Logo">
+                <img src="img/logo.png">
                 <a href="#home" class="logo">Food<span>Lover</span></a>
             </div>
             
@@ -117,12 +117,12 @@
         <section class="menu" id="menu">
             <div class="main-text">
                 <h2>Top-Selling Dishes</h2>
-                <div class="but" id ="but" onclick="showForm()">Book a Table</div>
+                <div class="but" id ="but" onclick="show()">Book a Table</div>
             </div>
 
             <div id="overlay"></div> <!--id để làm mờ trang-->
             <div id="form">      <!--Booking form-->
-                <span id="close" onclick="hideForm()"><i class='bx bx-x'></i></span> <!--X button-->
+                <span id="close" onclick="hide()"><i class='bx bx-x'></i></span> <!--X button-->
                 <fieldset>
                     <legend>Booking Form</legend>
                     <label>Name:</label>
@@ -355,7 +355,8 @@
         </section>
 
         <!--Footer-->
-        <footer class="footer">
+        <section>
+            <footer class="footer">
             <div class="footer-container">
                 <div class="footer-box">
                     <h2>Send us a message</h2>
@@ -395,6 +396,8 @@
             <p>© 2023 FoodLover. All Rights Reserved by Minh!</p>
             </div>
         </footer>
+        </section>
+        
 
         <!--Scroll top-->
         <a href="#home" class="scroll-top">

@@ -9,15 +9,14 @@ window.addEventListener("scroll", function(){
 var form = document.getElementById("form");
 var overlay = document.getElementById("overlay");
 
-function showForm(){
+function show(){
     form.style.display = "block";
     overlay.style.display = "block";
 }
-function hideForm(){
+function hide(){
     form.style.display = "none";
     overlay.style.display = "none";
 }
-
 
 // nut 3 soc
 let menu = document.querySelector('#menu-icon');
@@ -45,4 +44,17 @@ function prev(){
     slides[index].classList.remove('active');
     index = (index - 1 + slides.length) % slides.length;
     slides[index].classList.add('active');
+}
+
+// nhập đủ mới nhấn được login (nhập gì cũng nhận)
+function check(){
+    var phone_email = document.getElementById("phone_email").value;
+    var password = document.getElementById("password").value;
+    var submit = document.getElementById("submit");
+
+    if (phone_email == "" || password == ""){
+        submit.disabled = true;
+        return;
+    }
+    submit.disabled = false;
 }

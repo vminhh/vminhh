@@ -13,7 +13,7 @@
     --text: #302e29;
     --main: #ff9100;
     --sec-color: #858585;
-    --bg: #fffbf6;
+    --bg: rgb(247, 244, 244);
     --check: gray;
     --big-font: 4.5rem;
     --h2-font: 2.6rem;
@@ -46,14 +46,14 @@ header{
 .logo img{
     width: 50px;
     float: left;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 .logo a {
     display: flex;
     align-items: center;
 }
 .logo{
-    font-size : 25px;
+    font-size : 30px;
     font-weight: 700;
     color: var(--text);
 }
@@ -69,7 +69,7 @@ span{
     color: var(--text);
     font-size: var(--p-font);
     font-weight: 600;
-    padding: 5px 10px;
+    padding: 5px 8px;
     margin: 2px 25px;
     border-bottom: 2px solid transparent;
     transition: all 0.4s ease;
@@ -83,7 +83,7 @@ span{
 .h-icons{
     display: flex;
     align-items: center;
-    padding: 8px 15px;
+    padding: 8px 10px;
     background: var(--main);
     border-radius: 5rem;
 }
@@ -105,13 +105,12 @@ span{
     cursor: pointer;
     display: none;
 }
-
-    /* home */
 section{
-    padding: 80px 10% 70px;
+    padding: 80px 8% 40px;
 }
+    /* home */
 .home{
-    height: 70vh;
+    height: 63vh;
     width: 100%;
     position: relative;
     display: grid;
@@ -460,7 +459,7 @@ input:hover{
     /*Review*/
 .review{
     position: relative;
-    perspective: 1000px;
+    perspective: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -605,7 +604,6 @@ input:hover{
     background-repeat: no-repeat;
     border: 0.15rem solid var(--main);
     border-radius: 0.5rem;
-    padding: 1rem 1.5rem;
 }
 .footer-container{
     display: grid;
@@ -682,6 +680,7 @@ input:hover{
     background: var(--check);
     color: var(--bg);
 }
+
 /* hiệu ứng bấm */
 .but:active , .but1:active , .butt:active, #next:active, #prev:active, .submit-button:active{
     background: red;
@@ -715,7 +714,7 @@ input:hover{
     /* Responsive*/
 @media (max-width: 1690px){
     section{
-        padding: 65px 3%;
+        padding: 65px 4%;
         transition: 0.2s;
     }
     header{
@@ -723,7 +722,7 @@ input:hover{
         transition: 0.2s;
     }
     header.sticky{
-        padding: 8px 1.5%;
+        padding: 8px 1%;
         transition: 0.2s;
     }
     .contact{
@@ -733,8 +732,7 @@ input:hover{
 }
 @media (max-width: 1290px){
     section{
-        padding: 80px 3%;
-        transition: 0.2s;
+        padding: 80px 2.5%;
     }
     :root{
         --big-font: 3.2rem;
@@ -745,7 +743,7 @@ input:hover{
         transition: 0.25s;
     }
     .home{
-        height: 76vh;
+        height: 65vh;
     }
     .main-text{
         text-align: center;
@@ -846,22 +844,22 @@ input:hover{
 }
 @media (max-width: 820px){
     :root{
-        --big-font: 3rem;
-        --h2-font: 1.8rem;
+        --big-font: 2.5rem;
+        --h2-font: 1.6rem;
         --t-font: 1rem;
         --rev-font: 12px;
         transition: 0.2s;
     }
     .logo img{
-        width: 30px;
-        margin-right: 6px;
+        width: 25px;
+        margin-right: 3px;
     }
     .logo{
         font-size : 15px;
     }
     .home{
         grid-template-columns: 1fr;
-        height: 125vh;
+        height: 105vh;
     }
     .home-img{
         text-align: center;

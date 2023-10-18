@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scales=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>FoodLover • Sign up</title>
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="css/signinup.css">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo">
+                <a href="index.html#home" class="logo">Food<span>Lover</span></a>
+            </div>
+        </header>
+
+        <section>
+            <div class="sign-up">
+                <h2>Log in</h2>
+                <h4>The program is still being tested so you can input any values, as long as it covers the two fields below!</h4>
+                <br>
+                <form>
+                    <label>Phone or Email</label>
+                    <input id="phone_email" type="text" placeholder="+84... or example@gmail.com " oninput="check()">
+                    <label>Password</label>
+                    <input id="password" type="password" oninput="check()">
+                    <a href="index.html#home"><input class="but" id="submit" type="button" value="Log in" disabled></a>
+                </form>
+                    <p>Not have an account? <a href="signup.html"><span>Sign up here!</span></a></p>
+                </p>
+            </div>
+        </section>
+        
+        <script src="js/script.js"></script>
+    </body>
+
+</html>
