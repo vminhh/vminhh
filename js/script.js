@@ -1,4 +1,4 @@
-//làm cho thanh đứng yên khi cuộn
+//làm cho thanh hiện bg trắng khi cuộn trang
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", function(){
@@ -17,6 +17,7 @@ function hideForm(){
     form.style.display = "none";
     overlay.style.display = "none";
 }
+
 
 // nut 3 soc
 let menu = document.querySelector('#menu-icon');
