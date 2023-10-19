@@ -104,9 +104,9 @@
             <div class="about-text">
                 <h2>The Healthy Food<br>For Wealthy Mood</h2>
                 <p>Whether you are looking for a quick bite, a healthy meal, or a lavish spread, <span>FoodLover</span> has you covered.
-                    <br><br>You can also book a table online or order delivery with just a few clicks.
-                    <br><br>We offer fast and reliable service, as well as discounts and loyalty rewards for our regular customers.
-                    <br><br><span>FoodLover</span> is your ultimate guide to start your day right.
+                    <br>You can also book a table online or order delivery with just a few clicks.
+                    <br>We offer fast and reliable service, as well as discounts and loyalty rewards for our regular customers.
+                    <br><span>FoodLover</span> is your ultimate guide to start your day right.
                 </p>
                 <div><a href="infor.html" class="but1">Further</a></div>
             </div>
@@ -117,8 +117,12 @@
         <section class="menu" id="menu">
             <div class="main-text">
                 <h2>Top-Selling Dishes</h2>
+            </div>
+
+            <div class="booking">
                 <div class="but" id ="but" onclick="show()">Book a Table</div>
             </div>
+
 
             <div id="overlay"></div> <!--id để làm mờ trang-->
             <div id="form">      <!--Booking form-->
@@ -165,13 +169,13 @@
                     <img src="img/menu2.jpg">
                     <div class="menu-text">
                         <div class="menu-left">
-                            <h4>Coconut-Cardamom French Toast</h4>
+                            <h4>Coconut-Cardamom Toast</h4>
                         </div>
                         <div class="menu-right">
                             <h5>$7</h5>
                         </div>
                     </div>
-                    <p>The custard and compote are perfumed with cardamom for a multidimensional take on the brunch favorite!</p>
+                    <p>The Custard and compote are perfumed with cardamom for a multidimensional!</p>
                     <div class="star">
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
@@ -191,7 +195,7 @@
                             <h5>$10</h5>
                         </div>
                     </div>
-                    <p>Fire up your taste buds with this fiery and flavorful pizza. This east meets west pizza is bursting with flavour!</p>
+                    <p>Fire up your taste buds with this fiery pizza, meet west pizza is bursting!</p>
                     <div class="star">
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
@@ -200,9 +204,22 @@
                         <i class='bx bx-star'></i>
                     </div>
                 </div>
+                <div class="row">
+                    <img src="img/menu14.jpg">
+                    <div class="menu-text">
+                        <div class="menu-left">
+                            <h4>Coffee</h4>
+                        </div>
+                        <div class="menu-right">
+                            <h5>$3</h5>
+                        </div>
+                    </div>
+                    <p>Coffee can have a stimulating effect in humans. Today, coffee is one of the most popular beverages worldwide!</p>
+                </div>
             </div>
-            
+
             <div class="more"><a href="menu.html" class="butt">More</a></div>
+
         </section>
 
         <hr color="orange">
@@ -310,8 +327,11 @@
                 </div>
             </div>
 
-            <div id="next" onclick="next()" ><i class='bx bxs-chevrons-right'></i></div>
-            <div id="prev" onclick="prev()"><i class='bx bxs-chevrons-left'></i></div>
+            <div class="slide-buttons">
+                <div id="prev" onclick="prev()"><i class='bx bxs-chevron-left'></i></div>
+                <div id="next" onclick="next()"><i class='bx bxs-chevron-right'></i></div>
+            </div>
+
         </section> 
 
         <hr color="orange">
@@ -356,7 +376,7 @@
 
         <!--Footer-->
         <section>
-            <footer class="footer">
+        <footer class="footer">
             <div class="footer-container">
                 <div class="footer-box">
                     <h2>Send us a message</h2>
@@ -396,12 +416,11 @@
             <p>© 2023 FoodLover. All Rights Reserved by Minh!</p>
             </div>
         </footer>
-        </section>
-        
+    </section>
 
         <!--Scroll top-->
         <a href="#home" class="scroll-top">
-            <i class='bx bxs-up-arrow-square'></i>
+            <i class='bx bx-chevron-up'></i>
         </a>
 
         <!--JS-->
