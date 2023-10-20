@@ -12,7 +12,7 @@
 :root{
     --text: #302e29;
     --main: #ff9100;
-    --sec-color: #858585;
+    --sec-color: rgb(121, 120, 120);
     --bg: rgb(247, 244, 244);
     --check: gray;
     --big-font: 4.5rem;
@@ -84,8 +84,6 @@ span{
 .h-icons{
     display: flex;
     align-items: center;
-    width: 38%;
-    max-width: 120px;
     padding: 10px 20px;
     background: var(--main);
     border-radius: 5rem;
@@ -166,20 +164,26 @@ header.sticky{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.4rem;
+    gap: 1.5rem;
     border-radius: 10px;
-    width: 255px;
-    height: 90px;
+    margin: 5px 15px;
+    width: 230px;
+    height: 70px;
     background: var(--bg);
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 10px 20px;
     transition: all 0.38s ease;
+}
+.container-img img {
+    width: 40px;
+    height: 30px;
 }
 .container-text p{
     font-size: var(--p-font);
     font-weight: 500;
 }
 .c-mainbx:hover{
-    transform: translateX(10px);
+    transform: translateX(20px);
+    background: var(--main);
     cursor: pointer;
 }
 
@@ -207,37 +211,44 @@ header.sticky{
     margin-bottom: 2.3rem;
 }
     /* trang infor */
-.about-info{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
-    padding: 2rem 1.5rem;
+.info{
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    margin: 2rem 1rem;
 }
-.about-info-last{
-    padding: 2rem 0.5rem;
+.infor li{
+    margin: 0.5rem 2rem;
+    line-height: 32px;
 }
-.about-info-last h3{
+.infor-last{
+    text-align: center;
+}
+.infor-last h3{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
-.about-info-last p{
-    display: flex;
-    justify-content: center;
+.list{
+    display: inline-block;
+    text-align: left;
     font-size: var(--p-font);
     color: var(--sec-color);
     font-weight: 500;
     line-height: 32px;
-    margin: auto auto;
+    margin: 5px 10px;
 }
-.about-info-icon{
+.infor-icon{
     display: flex;
     justify-content: center;
     color: var(--main);
     font-size: var(--p-font);
+    margin-top: 20px;
 }
-.info-last-text{
+.infor-last-text{
     text-align: center;
-    padding: 15px 0 40px;
+    padding: 15px 0 20px;
+    margin: 10px 20px;
     color: var(--text);
     font-size: var(--t-font);
     letter-spacing: 1px;
@@ -390,11 +401,12 @@ input:hover{
     padding: 15px 0;
 }
 .menu-left h4{
-    font-size: 20px;
+    font-size: 17px;
 }
 .menu-right h5{
     color: var(--main);
-    font-size: 20px;
+    font-size: 17px;
+    margin-right: 5px;
 }
 .row p{
     color: var(--sec-color);
@@ -605,7 +617,6 @@ input:hover{
 }
 .footer-box h3{
     font-size: var(--t-font);
-    letter-spacing: space-between;
 }
 .footer-box li{
     font-size: var(--p-font);
@@ -693,6 +704,7 @@ input:hover{
     color: #fff;
     background: var(--main);
     border-radius: 5rem;
+    opacity: 0.75;
 }
 
     /* Responsive*/
@@ -741,22 +753,23 @@ input:hover{
         height: 40px;
     }
 }
-@media (max-width: 946px) {
+@media (max-width: 940px) {
     #menu-icon{
         display: block;
     }
     .navbar{
         position: absolute;
         top: 100%;
-        right: -100%;
+        right: -1000px;
         width: 250px;
-        height: 110vh;
+        height: 80vh;
         background: var(--bg);
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 180px 40px;
-        transition: all 0.38s ease ;
+        padding: 50px 40px;
+        transition: all 0.2s ease ;
+        opacity: 0.95;
     }
     .navbar a{
         display: block;
@@ -784,7 +797,7 @@ input:hover{
     .home-img img, .about-img img{
         max-width: 590px;
         height: auto;
-        width: 100%;
+        width: 95%;
     }
     .home-text{
         padding-top: 50px;
@@ -806,20 +819,20 @@ input:hover{
         transition: 0.2s;
     }
     .logo{
-        font-size: 22px;
+        font-size: 20px;
     }
     .logo img{
         width: 80%;
         max-width: 30px;
     }
     .h-icons{
-        padding: 3px 2px;
+        padding: 3px 3px;
     }
     .h-icons i{
         font-size: 13px;;
     }
     #menu-icon{
-        font-size: 20px;
+        font-size: 18px;
     }
     .home{
         grid-template-columns: 1fr;
@@ -831,7 +844,7 @@ input:hover{
     .home-img img, .about-img img{
         height: auto;
         max-width: 590px;
-        width: 100%;
+        width: 95%;
     }
     .home-text{
         padding-top: 45px;
@@ -840,7 +853,8 @@ input:hover{
         grid-template-columns: 1fr;
     }
     #form{
-        width: 270px;
+        width: 90%;
+        max-width: 270px;
         height: auto;
     }
     #submit{

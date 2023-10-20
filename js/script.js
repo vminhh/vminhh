@@ -45,3 +45,16 @@ function prev(){
     index = (index - 1 + slides.length) % slides.length;
     slides[index].classList.add('active');
 }
+
+// nhập đủ mới nhấn được login (nhập gì cũng nhận)
+function check(){
+    var phone_email = document.getElementById("phone_email").value;
+    var password = document.getElementById("password").value;
+    var submit = document.getElementById("submit");
+
+    if (phone_email == "" || password == ""){
+        submit.disabled = true;
+        return;
+    }
+    submit.disabled = false;
+}

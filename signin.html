@@ -23,22 +23,20 @@
         <section>
             <div class="sign-up">
                 <h2>Log in</h2>
-                <h4>The program is still being tested so you can input any values or click on Log in to return Home section!</h4>
+                <h4>The program is still being tested so you can input any values!</h4>
                 <br>
                 <form>
                     <label>Phone or Email</label>
-                    <input id="phone_email" type="text" placeholder="+84... or example@gmail.com">
+                    <input id="phone_email" type="text" placeholder="+84... or example@gmail.com" oninput="check()">
                     <label>Password</label>
-                    <input id="password" type="password">
-                    <a href="index.html#home"><input class="but" id="submit" type="button" value="Log in"></a>
+                    <input id="password" type="password" oninput="check()">
+                    <a href="index.html#home"><input class="but" id="submit" type="button" value="Log in" disabled></a>
                 </form>
                     <p>Not have an account? <a href="signup.html"><span>Sign up here!</span></a></p>
-                    <p>You can click on <a href="index.html"><span>here</span></a> to return Home section</p>
-                </p>
+                    <p>Click <a href="index.html"><span>here</span></a> to return Home section</p>
             </div>
         </section>
         
         <script src="js/script.js"></script>
     </body>
-
 </html>
