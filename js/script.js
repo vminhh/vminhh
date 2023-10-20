@@ -31,7 +31,7 @@ window.onscroll = () => {
     navbar.classList.remove('open');
 };
 
-// next , prev comment
+// nut next , prev
 let slides = document.querySelectorAll('.slider-container');
 let index = 0;
 
