@@ -160,7 +160,7 @@ header.sticky{
     align-items: center;
     margin-top: 4rem;
 }
-.c-mainbx{
+.main-box{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -181,7 +181,7 @@ header.sticky{
     font-size: var(--p-font);
     font-weight: 500;
 }
-.c-mainbx:hover{
+.main-box:hover{
     transform: translateX(20px);
     background: var(--main);
     cursor: pointer;
@@ -385,20 +385,20 @@ input:hover{
 }
 .row{
     width: 90%;
-    max-width: 280px;
+    max-width: 270px;
     transition: all 0.25s ease;
     align-items: center;
 }
 .row img{
-    width: 250px;
-    height: 210px;
+    width: 230px;
+    height: 200px;
     border-radius: 5%;
 }
 .menu-text{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 .menu-left h4{
     font-size: 17px;
@@ -412,7 +412,7 @@ input:hover{
     color: var(--sec-color);
     font-size: 15px;
     line-height: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .star i{
     color: var(--main);
@@ -435,7 +435,7 @@ input:hover{
 }
 .butt {
     display: inline-block;
-    padding: 14px 26px;
+    padding: 14px 30px;
     background: var(--main);
     color: var(--bg);
     font-size: 15px;
@@ -445,7 +445,7 @@ input:hover{
     cursor: pointer;
 }
 .butt:hover{
-    transform: scale(1.03);
+    transform: scale(1.05);
     cursor: pointer;
     background: var(--check);
 }
@@ -471,7 +471,6 @@ input:hover{
     font-size: var(--h2-font);
     text-align: center;
     width: 100%;
-    order: -1;
     margin-bottom: 20px;
 }
 .slide{
