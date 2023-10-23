@@ -1,3 +1,1 @@
-# vminhh.github.io
-...............
-access this site directly using this link: https://vminhh.github.io/
+Access this site directly using this link: https://vminhh.github.io/
