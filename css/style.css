@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -28,7 +29,7 @@ body{
     color: var(--text);
 }
 
-    /*header*/
+    /* Header */
 header{
     position: fixed;
     width: 100%;
@@ -43,7 +44,7 @@ header{
     transition: all 0.38s ease;
 }
 
-    /*ảnh logo và FoodLover*/
+    /* Logo FoodLover */
 .logo img{
     width: 50px;
     float: left;
@@ -62,7 +63,7 @@ span{
     color: var(--main);
 }
 
-    /* thanh navbar */
+    /* Thanh navbar */
 .navbar{
     display: flex;
 }
@@ -80,7 +81,7 @@ span{
     color: var(--main);
 }
 
-    /*icon search và user, cart*/
+    /* icon search và user, cart */
 .h-icons{
     display: flex;
     align-items: center;
@@ -98,7 +99,7 @@ span{
     background: var(--check);
 } 
 
-    /*nút 3 sọc*/
+    /* nút 3 sọc */
 #menu-icon{
     font-size: 32px;
     color: var(--bg);
@@ -109,7 +110,7 @@ span{
 section{
     padding: 90px 15% 80px;
 }
-    /* home */
+    /* Home */
 .home{
     height: 88vh;
     width: 100%;
@@ -187,7 +188,7 @@ header.sticky{
     cursor: pointer;
 }
 
-    /*about*/
+    /* about */
 .about{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -358,7 +359,7 @@ input:hover{
     transform: scale(1.05);
 }
 
-    /* mờ trang khi booking form hiên lên */
+    /* mờ trang sau khi booking form hiên lên */
 #overlay{
     display: none;
     position: fixed;
@@ -368,7 +369,7 @@ input:hover{
     height: 100%;
     background-color: rgba(225,225,225,0.65);
 }
-    /*menu*/
+    /* menu */
 .booking {
     display: flex;
     justify-content: center;
@@ -458,7 +459,7 @@ input:hover{
     font-weight: 500;
 }
 
-    /*Review*/
+    /* Review */
 .review{
     position: relative;
     perspective: 10px;
@@ -595,7 +596,7 @@ input:hover{
     transform: scale(1.03);
 }
 
-    /*Footer*/
+    /* Footer */
 .footer{
     background: linear-gradient(rgba(225,225,225,0.5), rgba(225,225,225,0.5)), url("../img/bg.png");
     background-size: cover;
